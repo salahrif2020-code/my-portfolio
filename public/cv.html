@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Salah Eddin Andaloussi</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #1e293b;
+      font-size: 9pt;
+      line-height: 1.35;
+      background: white;
+    }
+    
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: white;
+      padding: 10mm 14mm;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    /* HEADER */
+    header {
+      border-bottom: 2px solid #0ea5e9;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+    
+    h1 {
+      font-size: 19pt;
+      color: #0f172a;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 2px;
+    }
+    
+    .subtitle {
+      font-size: 10.5pt;
+      color: #0ea5e9;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.5pt;
+      color: #475569;
+    }
+    
+    .contact-info a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+    
+    /* SECTIONS */
+    section {
+      margin-bottom: 9px;
+    }
+    
+    h2 {
+      font-size: 10.5pt;
+      color: #0f172a;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #cbd5e1;
+      margin-bottom: 6px;
+    }
+    
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 11px;
+      background: #0ea5e9;
+      margin-right: 6px;
+      vertical-align: middle;
+      margin-bottom: 2px;
+    }
+    
+    /* PROFILE */
+    .profile {
+      font-size: 9pt;
+      color: #475569;
+      text-align: justify;
+      line-height: 1.4;
+    }
+    
+    /* ITEMS */
+    .item {
+      margin-bottom: 7px;
+    }
+    
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    
+    .item-title {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 9.5pt;
+    }
+    
+    .item-date {
+      font-size: 8.5pt;
+      color: #64748b;
+      font-style: italic;
+    }
+    
+    .item-subtitle {
+      color: #0ea5e9;
+      font-size: 8.5pt;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    
+    .item-description {
+      font-size: 8.5pt;
+      color: #475569;
+      line-height: 1.35;
+    }
+    
+    .item-description ul {
+      margin-left: 12px;
+      margin-top: 1px;
+    }
+    
+    .item-description li {
+      margin-bottom: 0;
+    }
+    
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    
+    .skill-category {
+      font-size: 8.5pt;
+    }
+    
+    .skill-category strong {
+      color: #0f172a;
+      display: block;
+      margin-bottom: 1px;
+    }
+    
+    .skill-category span {
+      color: #475569;
+    }
+    
+    /* LANGUAGES */
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 8.5pt;
+    }
+    
+    .language {
+      display: flex;
+      gap: 4px;
+    }
+    
+    .language strong {
+      color: #0f172a;
+    }
+    
+    .language span {
+      color: #475569;
+    }
+    
+    /* PRINT */
+    @media print {
+      body {
+        background: white;
+      }
+      .page {
+        margin: 0;
+        padding: 10mm 14mm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    
+    <!-- HEADER -->
+    <header>
+      <h1>Salah Eddin Andaloussi</h1>
+      <div class="subtitle">Développeur Web Full-Stack Junior</div>
+      <div class="contact-info">
+        <span>📧 salah.rif2020@gmail.com</span>
+        <span>📱 +212 614 414 984</span>
+        <span>📍 Al Hoceima, Maroc</span>
+        <span>🔗 github.com/salahrif2020-code</span>
+        <span>💼 linkedin.com/in/salah-and</span>
+      </div>
+    </header>
+    
+    <!-- PROFILE -->
+    <section>
+      <h2>Profil</h2>
+      <p class="profile">
+        Développeur Web Full-Stack junior, titulaire d'un DTS Développement Digital – Web Full Stack (Bac+2).
+        Passionné par la création d'applications web modernes avec React, Node.js et MongoDB.
+        À la recherche d'un stage ou d'un premier emploi au Maroc, en Europe, ou d'une Ausbildung en Allemagne
+        (Fachinformatiker). Motivé, rigoureux et capable d'apprendre rapidement de nouvelles technologies.
+      </p>
+    </section>
+    
+    <!-- FORMATION -->
+    <section>
+      <h2>Formation</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">DTS Développement Digital – Web Full Stack</div>
+          <div class="item-date">2024 — 2026</div>
+        </div>
+        <div class="item-subtitle">ISTA Al Hoceima — OFPPT, Maroc</div>
+        <div class="item-description">
+          Formation Bac+2 : front-end (HTML, CSS, JavaScript, React), back-end (Node.js, Express, PHP, Laravel),
+          bases de données (MySQL, MongoDB) et bonnes pratiques DevOps.
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Baccalauréat — Sciences Physiques</div>
+          <div class="item-date">2024</div>
+        </div>
+        <div class="item-subtitle">Lycée Moulay Ali Chérif, Maroc</div>
+      </div>
+    </section>
+    
+    <!-- EXPÉRIENCE -->
+    <section>
+      <h2>Expérience</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Stage — NORSAL</div>
+          <div class="item-date">Juin 2026</div>
+        </div>
+        <div class="item-subtitle">Al Hoceima, Maroc</div>
+        <div class="item-description">
+          <ul>
+            <li>Gestion et traitement des factures</li>
+            <li>Saisie et vérification de données sur ordinateur</li>
+            <li>Tâches administratives et gestion documentaire</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PROJETS -->
+    <section>
+      <h2>Projets</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">NORSAL Restaurant — Application Full-Stack</div>
+          <div class="item-date">2025</div>
+        </div>
+        <div class="item-description">
+          Application web pour un restaurant : menu (24 plats), réservation de tables, dashboard administrateur. <br>
+          <strong>Stack :</strong> React, Vite, Tailwind CSS, Node.js, Express.js, MongoDB.
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">Rif Cars — Application de location de voitures</div>
+          <div class="item-date">2025</div>
+        </div>
+        <div class="item-description">
+          Application web de location de véhicules avec catalogue et interface de réservation. <br>
+          <strong>Stack :</strong> React, JavaScript, HTML5, CSS3.
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-header">
+          <div class="item-title">ZIRI — Site e-commerce streetwear</div>
+          <div class="item-date">2025</div>
+        </div>
+        <div class="item-description">
+          Site e-commerce pour une marque streetwear inspirée du Rif : catalogue, filtres, panier et wishlist. <br>
+          <strong>Stack :</strong> React, JavaScript, CSS.
+        </div>
+      </div>
+    </section>
+    
+    <!-- COMPÉTENCES -->
+    <section>
+      <h2>Compétences techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Frontend</strong>
+          <span>HTML5, CSS3, JavaScript (ES6+), React.js, Vite, Tailwind CSS, Responsive</span>
+        </div>
+        <div class="skill-category">
+          <strong>Backend</strong>
+          <span>Node.js, Express.js, PHP, Laravel, REST API, JWT</span>
+        </div>
+        <div class="skill-category">
+          <strong>Bases de données</strong>
+          <span>MongoDB, MySQL</span>
+        </div>
+        <div class="skill-category">
+          <strong>Outils & DevOps</strong>
+          <span>Git, GitHub, GitLab, VS Code, Postman, Docker (notions)</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- LANGUES -->
+    <section>
+      <h2>Langues</h2>
+      <div class="languages">
+        <div class="language"><strong>Arabe :</strong> <span>Langue maternelle</span></div>
+        <div class="language"><strong>Français :</strong> <span>B1</span></div>
+        <div class="language"><strong>Anglais :</strong> <span>B1</span></div>
+        <div class="language"><strong>Allemand :</strong> <span>B1 (en cours)</span></div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
